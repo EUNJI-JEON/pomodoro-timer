@@ -46,6 +46,9 @@ function reducer(state= initialState, action){
 
         case ADD_SECOND:
         return applyAddSecond(state);
+
+        default:
+        return state;
     }
 }
 
@@ -86,6 +89,8 @@ const actionCreators = {
     restartTimer,
     addSecond
 };
+
+export { actionCreators};
 
 //Export Reducer
 
